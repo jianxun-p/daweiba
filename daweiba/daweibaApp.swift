@@ -7,14 +7,20 @@
 
 import SwiftUI
 import SwiftData
+import CryptoKit
 
 @main
 struct daweibaApp: App {
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Account.self,
         ])
+        #if targetEnvironment(simulator)
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: true)
+        #else
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        #endif
 
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])

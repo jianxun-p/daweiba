@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7189DD3F2C59D51D0043B95C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189DD3B2C59D51D0043B95C /* AccountView.swift */; };
+		7189DD402C59D51D0043B95C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189DD3C2C59D51D0043B95C /* Account.swift */; };
+		7189DD412C59D51D0043B95C /* InfoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189DD3D2C59D51D0043B95C /* InfoEntry.swift */; };
+		7189DD422C59D51D0043B95C /* InfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189DD3E2C59D51D0043B95C /* InfoListView.swift */; };
+		7189DD442C59F6990043B95C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189DD432C59F6990043B95C /* ContentView.swift */; };
 		719C9AAC2C50D35100898304 /* daweibaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719C9AAB2C50D35100898304 /* daweibaApp.swift */; };
-		719C9AAE2C50D35100898304 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719C9AAD2C50D35100898304 /* ContentView.swift */; };
-		719C9AB02C50D35100898304 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719C9AAF2C50D35100898304 /* Item.swift */; };
 		719C9AB22C50D35500898304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719C9AB12C50D35500898304 /* Assets.xcassets */; };
 		719C9AB62C50D35500898304 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719C9AB52C50D35500898304 /* Preview Assets.xcassets */; };
 		719C9AC02C50D35600898304 /* daweibaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719C9ABF2C50D35600898304 /* daweibaTests.swift */; };
 		719C9ACA2C50D35600898304 /* daweibaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719C9AC92C50D35600898304 /* daweibaUITests.swift */; };
 		719C9ACC2C50D35600898304 /* daweibaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719C9ACB2C50D35600898304 /* daweibaUITestsLaunchTests.swift */; };
+		71CF1FD52C5CCBCD0052BECA /* AddAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CF1FD42C5CCBCD0052BECA /* AddAccountView.swift */; };
+		71FC47CE2C55151E0071E4EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FC47CD2C55151E0071E4EF /* UIKit.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7189DD3B2C59D51D0043B95C /* AccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		7189DD3C2C59D51D0043B95C /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		7189DD3D2C59D51D0043B95C /* InfoEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoEntry.swift; sourceTree = "<group>"; };
+		7189DD3E2C59D51D0043B95C /* InfoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoListView.swift; sourceTree = "<group>"; };
+		7189DD432C59F6990043B95C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		719C9AA82C50D35100898304 /* daweiba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daweiba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		719C9AAB2C50D35100898304 /* daweibaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daweibaApp.swift; sourceTree = "<group>"; };
-		719C9AAD2C50D35100898304 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		719C9AAF2C50D35100898304 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		719C9AB12C50D35500898304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		719C9AB32C50D35500898304 /* daweiba.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = daweiba.entitlements; sourceTree = "<group>"; };
 		719C9AB52C50D35500898304 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 		719C9AC52C50D35600898304 /* daweibaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = daweibaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		719C9AC92C50D35600898304 /* daweibaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daweibaUITests.swift; sourceTree = "<group>"; };
 		719C9ACB2C50D35600898304 /* daweibaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daweibaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		71CF1FD42C5CCBCD0052BECA /* AddAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountView.swift; sourceTree = "<group>"; };
+		71D200C72C5DD62800BAAE10 /* CryptoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/CryptoKit.framework; sourceTree = DEVELOPER_DIR; };
+		71D200C92C5E11E700BAAE10 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/AuthenticationServices.framework; sourceTree = DEVELOPER_DIR; };
+		71FC47CD2C55151E0071E4EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71FC47CE2C55151E0071E4EF /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +87,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7189DD322C59CF090043B95C /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				7189DD3C2C59D51D0043B95C /* Account.swift */,
+				7189DD3B2C59D51D0043B95C /* AccountView.swift */,
+				7189DD3D2C59D51D0043B95C /* InfoEntry.swift */,
+				7189DD3E2C59D51D0043B95C /* InfoListView.swift */,
+				71CF1FD42C5CCBCD0052BECA /* AddAccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		719C9A9F2C50D35100898304 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,7 @@
 				719C9ABE2C50D35600898304 /* daweibaTests */,
 				719C9AC82C50D35600898304 /* daweibaUITests */,
 				719C9AA92C50D35100898304 /* Products */,
+				71FC47CC2C55151E0071E4EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				719C9AAB2C50D35100898304 /* daweibaApp.swift */,
-				719C9AAD2C50D35100898304 /* ContentView.swift */,
-				719C9AAF2C50D35100898304 /* Item.swift */,
+				7189DD432C59F6990043B95C /* ContentView.swift */,
+				7189DD322C59CF090043B95C /* Account */,
 				719C9AB12C50D35500898304 /* Assets.xcassets */,
 				719C9AB32C50D35500898304 /* daweiba.entitlements */,
 				719C9AB42C50D35500898304 /* Preview Content */,
@@ -132,6 +158,16 @@
 			path = daweibaUITests;
 			sourceTree = "<group>";
 		};
+		71FC47CC2C55151E0071E4EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71D200C92C5E11E700BAAE10 /* AuthenticationServices.framework */,
+				71D200C72C5DD62800BAAE10 /* CryptoKit.framework */,
+				71FC47CD2C55151E0071E4EF /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +184,8 @@
 			dependencies = (
 			);
 			name = daweiba;
+			packageProductDependencies = (
+			);
 			productName = daweiba;
 			productReference = 719C9AA82C50D35100898304 /* daweiba.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +258,8 @@
 				Base,
 			);
 			mainGroup = 719C9A9F2C50D35100898304;
+			packageReferences = (
+			);
 			productRefGroup = 719C9AA92C50D35100898304 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,9 +302,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				719C9AAE2C50D35100898304 /* ContentView.swift in Sources */,
-				719C9AB02C50D35100898304 /* Item.swift in Sources */,
+				7189DD3F2C59D51D0043B95C /* AccountView.swift in Sources */,
+				7189DD402C59D51D0043B95C /* Account.swift in Sources */,
+				7189DD442C59F6990043B95C /* ContentView.swift in Sources */,
+				7189DD412C59D51D0043B95C /* InfoEntry.swift in Sources */,
+				7189DD422C59D51D0043B95C /* InfoListView.swift in Sources */,
 				719C9AAC2C50D35100898304 /* daweibaApp.swift in Sources */,
+				71CF1FD52C5CCBCD0052BECA /* AddAccountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,14 +464,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = daweiba/daweiba.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"daweiba/Preview Content\"";
 				DEVELOPMENT_TEAM = 5U6K46DT83;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = daweiba;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -438,9 +486,9 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stevenp.proj.daweiba;
@@ -458,14 +506,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = daweiba/daweiba.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"daweiba/Preview Content\"";
 				DEVELOPMENT_TEAM = 5U6K46DT83;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = daweiba;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -476,7 +528,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;

@@ -2,65 +2,95 @@
 //  ContentView.swift
 //  daweiba
 //
-//  Created by 潘建勋 on 2024-07-24.
+//  Created by 潘建勋 on 2024-07-31.
 //
 
 import SwiftUI
 import SwiftData
 
 struct ContentView: View {
+    
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
+        
+    @Query private var acnts: [Account]
+    
+    @State private var searchText: String = ""
+        
     var body: some View {
-        NavigationSplitView {
+        NavigationStack {
             List {
-                ForEach(items) { item in
+                let showAcnts = filteredAccounts()
+                ForEach(showAcnts, id: \.id) { acnt in
                     NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        AccountView(acnt: acnt)
                     } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        AccountListEntryLabel(acnt: acnt)
                     }
                 }
-                .onDelete(perform: deleteItems)
+                .onDelete(perform: deleteAcnt)
             }
-#if os(macOS)
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-#endif
+            .searchable(text: $searchText, prompt: "Title")
+            .navigationTitle("Top Secret")
             .toolbar {
-#if os(iOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-#endif
                 ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                    NavigationLink {
+                        AddAccountView(acnt: Account())
+                    } label: {
+                        Label("add", systemImage: "plus")
                     }
                 }
             }
-        } detail: {
-            Text("Select an item")
         }
+        
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
+    
+    private func addAcnt(_ acnt: Account) {
+        modelContext.insert( acnt )
     }
-
-    private func deleteItems(offsets: IndexSet) {
+    
+    private func deleteAcnt(at offsets: IndexSet) {
         withAnimation {
             for index in offsets {
-                modelContext.delete(items[index])
+                modelContext.delete(acnts[index])
+            }
+        }
+    }
+    
+    
+    private func filteredAccounts() -> [Account] {
+        guard !acnts.isEmpty && !searchText.isEmpty 
+        else { return acnts }
+        return acnts.filter { acnt in
+            acnt.title.lowercased().contains(searchText.lowercased())
+        }
+    }
+    
+}
+
+
+struct AccountListEntryLabel: View {
+    @State var acnt: Account
+    var body: some View {
+        VStack {
+            HStack {
+                Text(acnt.title)
+                    .foregroundStyle(.primary)
+                Spacer()
+            }
+            if !acnt.username.isEmpty {
+                HStack {
+                    Text(acnt.username)
+                        .foregroundStyle(.secondary)
+                    Spacer()
+                }
             }
         }
     }
 }
 
+
+
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+        .modelContainer(for: Account.self, inMemory: true)
 }
